@@ -1,0 +1,255 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/ontology/bibo/> .
+@prefix ns2: <https://w3id.org/mira/> .
+@prefix ns3: <http://www.geonames.org/ontology#> .
+@prefix ns4: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix ns5: <http://semanticscience.org/resource/> .
+@prefix ns6: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix ns7: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/392ac07651cf0cf497d20836b61bee9044ea34a9> a ns1:AcademicArticle ;
+    ns4:doi <https://doi.org/10.1093/EREH/HEV023> ;
+    dcterms:abstract "This work combines economic and demographic data to examine inequality of living standards in Stockholm at the turn of the twentieth century. Using a longitudinal population register with occupational information, we utilize event-history models to show that despite absolute decreases in mortality, relative differences between socioeconomic groups remained virtually constant. The results also show that child mortality continued to be sensitive to short-term fluctuations in wages and that there were no socioeconomic differences in this response. We argue that the persistent inequality in living standards was possibly due to differences in residential patterns and nutrition." ;
+    dcterms:contributor <https://www.semanticscholar.org/author/152237222>,
+        <https://www.semanticscholar.org/author/35113212> ;
+    dcterms:created "2016-05-01"^^xsd:date ;
+    dcterms:identifier "392ac07651cf0cf497d20836b61bee9044ea34a9" ;
+    dcterms:title "Industrialization and inequality revisited: mortality differentials and vulnerability to economic stress in Stockholm, 1878–1926" ;
+    ns1:cites <http://example.org/0116b5d7cd6dd7e65c35e60be86cff5608380a40>,
+        <http://example.org/036b1122f1fc4e81f5464235a5aa872fb194f190>,
+        <http://example.org/059cefe02d55f4a330d61bc98d67a7bc95707aca>,
+        <http://example.org/0894fc3ee11e17d41fa0f022a86680f52d2813cd>,
+        <http://example.org/0f14055670d8a25897f842a5f789ab7b691f54f7>,
+        <http://example.org/1044f41291a347a23eeae7a037d445e67b3c65fb>,
+        <http://example.org/125c176d0da203f30871626694b826fa646c6e96>,
+        <http://example.org/18720256083ac8242e47408b5bad6f8bb8b1d39e>,
+        <http://example.org/1c91ed091645c62c1344efb57d5123f24e57d1fd>,
+        <http://example.org/1dc29dcd68b6753e0e799a109d7da09d82b20b51>,
+        <http://example.org/22e7663222d8d9fbd5e958bd4d58a71819e5a012>,
+        <http://example.org/24e8ca6e52ca2bee9a9d37328f03a494523d5aa9>,
+        <http://example.org/44ceeaea839910918ee8da2908fe5996e963b1e9>,
+        <http://example.org/47edada7beb43890556e8f000e77970c6aaa3107>,
+        <http://example.org/4899c5b2240fb55712104dc22ee7c07b558fe3e6>,
+        <http://example.org/48d33ae60804823e8f26f63d04b318c2938c3583>,
+        <http://example.org/4c44f7c12f6e46f9aa03873fcb1ccd5a19ef1c2d>,
+        <http://example.org/4e6020cc0f2b7494861663de4008ab8380bba046>,
+        <http://example.org/5d017dd390fdbd1d405ac16d1607136b6ed6be57>,
+        <http://example.org/5dad2f69b09dfd30d0d4b66eedd98567a95dedb8>,
+        <http://example.org/5eef5baf0c55c8b00b5ccb6d3fb0cadee85bd52d>,
+        <http://example.org/636d390ec6fe4e03b9bd75462852e92c6e72c876>,
+        <http://example.org/6496a83bd5f0d023f9a5437e62cfd3d1435185e5>,
+        <http://example.org/657603d731b61e783daa817ad57e1b98a1dd6bc6>,
+        <http://example.org/6f0cbcbab6156ae7391f24611ac07a9ebeda939c>,
+        <http://example.org/78535d1e3c0bd735130e696fd6daf01af3dcbc06>,
+        <http://example.org/8b15899a392851d2a3172abdab349aebfe6544be>,
+        <http://example.org/90121e85fcaadd6b55a98f21815470b8fd438e45>,
+        <http://example.org/9056bacde3b06af0081f316fda19a45f61fcf695>,
+        <http://example.org/9aaf2928e81d66019a28898973a309cb13942f8b>,
+        <http://example.org/9b14d729dbed0b5d1a6448f7ad6f65c2151115ba>,
+        <http://example.org/9d3e632bb8c9fc14d5250123661b21c3f0b4833f>,
+        <http://example.org/9e5468ebc332b63bae42b76e0de4960099186d6b>,
+        <http://example.org/a3508f97eff18b8cffb5ccd8c87feda108895c58>,
+        <http://example.org/aca5ff4ff2d7863c8ee781e6a174bd74c53d70e6>,
+        <http://example.org/ae8e04ee8dbf96e1144afc9749b1034d37ab8050>,
+        <http://example.org/af560de1948e7feef952d29671a80f694a09d183>,
+        <http://example.org/b0ca19cdb57b03a6eeb5554b74a8efb7e6c5b2e7>,
+        <http://example.org/b4f82ffc53500ca1d4a0a5858b92844f8f0829e1>,
+        <http://example.org/bb6d5593a24d7dd480db19568340a55e4a1d5960>,
+        <http://example.org/c08c311567858dcf227114a788eb2e9509fd0d0b>,
+        <http://example.org/c43383f5019375b2ed737cec87fb764a0cf86920>,
+        <http://example.org/c9197f9ced9bff3089379db45e3c58d4e426dc99>,
+        <http://example.org/c929a6fdc0457b9cc4b329ebda8d7039be511d86>,
+        <http://example.org/dbe1f548550df7f73371791687ebc63f4ff71306>,
+        <http://example.org/dcc610d8d9035091ecf04ada003249c29cdeca17>,
+        <http://example.org/dd174b6ee2a91fe03e57a7f89d69065cc0b3551f>,
+        <http://example.org/dd4ef8136b32b3872c72a0c65596ec6bafd192bc>,
+        <http://example.org/e7792cd2c614849e7af4b6835d5e746f33481364>,
+        <http://example.org/ed0ac142d0e4238bc87a4766c14835c9138b5035>,
+        <http://example.org/ee9abdd31ea577d2b3cc401b0d951bc2bdb23b6b>,
+        <http://example.org/f1f4cf1d22689950e96651d7bf1957f485314232>,
+        <http://example.org/f85de73603690b98ee4602be1b00b57161e00329>,
+        <http://example.org/f8fb86013a07ef72019ee7cffca120eb65b0e153> ;
+    ns5:SIO_000008 <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b1> .
+
+<http://purl.bioontology.org/ontology/MESH/D004467> a skos:Concept ;
+    rdfs:label "Economics" .
+
+<http://purl.bioontology.org/ontology/MESH/D008099> a skos:Concept ;
+    rdfs:label "Liver" .
+
+<http://purl.bioontology.org/ontology/MESH/D064686> a skos:Concept ;
+    rdfs:label "Nutritionists" .
+
+<http://purl.bioontology.org/ontology/MESH/Q000191> a skos:Concept ;
+    rdfs:label "economics" .
+
+<http://purl.bioontology.org/ontology/MESH/Q000401> a skos:Concept ;
+    rdfs:label "mortality" .
+
+<http://purl.bioontology.org/ontology/MESH/Q000592> a skos:Concept ;
+    rdfs:label "standards" .
+
+<http://purl.bioontology.org/ontology/STY/T096> a skos:Concept ;
+    rdfs:label "Group" .
+
+<http://purl.jp/bio/4/id/200906003938764196> a skos:Concept ;
+    rdfs:label "group" .
+
+<http://purl.jp/bio/4/id/200906008393315870> a skos:Concept ;
+    rdfs:label "economy" .
+
+<http://purl.jp/bio/4/id/200906019365176514> a skos:Concept ;
+    rdfs:label "Mortality" .
+
+<http://purl.jp/bio/4/id/200906021013764194> a skos:Concept ;
+    rdfs:label "Nutrition" .
+
+<http://purl.jp/bio/4/id/200906027772176211> a skos:Concept ;
+    rdfs:label "nutriment" .
+
+<http://purl.jp/bio/4/id/200906030606309832> a skos:Concept ;
+    rdfs:label "Economics" .
+
+<http://purl.jp/bio/4/id/200906045182197076> a skos:Concept ;
+    rdfs:label "Liver" .
+
+<http://purl.jp/bio/4/id/200906059832463877> a skos:Concept ;
+    rdfs:label "nutrition science" .
+
+<http://purl.jp/bio/4/id/200906071956224226> a skos:Concept ;
+    rdfs:label "standard" .
+
+<http://purl.jp/bio/4/id/200906083835576840> a skos:Concept ;
+    rdfs:label "stand" .
+
+<http://purl.jp/bio/4/id/200906085565727062> a skos:Concept ;
+    rdfs:label "standardization" .
+
+<http://purl.obolibrary.org/obo/CHEBI_24433> a skos:Concept ;
+    rdfs:label "group" .
+
+<http://purl.obolibrary.org/obo/PATO_0000060> a skos:Concept ;
+    rdfs:label "spatial pattern" .
+
+<http://purl.obolibrary.org/obo/STATO_0000414> a skos:Concept ;
+    rdfs:label "mortality" .
+
+<http://purl.obolibrary.org/obo/UBERON_0002107> a skos:Concept ;
+    rdfs:label "liver" .
+
+ns5:SIO_000130 a skos:Concept ;
+    rdfs:label "pattern" .
+
+ns5:SIO_000618 a skos:Concept ;
+    rdfs:label "standard" .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b1> a ns5:SIO_000976 ;
+    ns5:SIO_000008 <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b2>,
+        ns2:residential_patterns_and_nutrition .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b10> a time:Instant ;
+    time:inXSDDate "1900-12-31"^^xsd:date .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b11> a ns5:SIO_000414 ;
+    rdfs:label "Stockholm"@en ;
+    ns3:locatedIn <http://sws.geonames.org/2673730/> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b12> a qb:DimensionProperty ;
+    rdfs:label "residential patterns and nutrition"@en ;
+    qb:concept <http://purl.bioontology.org/ontology/MESH/D064686>,
+        <http://purl.jp/bio/4/id/200906021013764194>,
+        <http://purl.jp/bio/4/id/200906027772176211>,
+        <http://purl.jp/bio/4/id/200906059832463877>,
+        <http://purl.obolibrary.org/obo/PATO_0000060>,
+        ns5:SIO_000130 .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b13> a ns5:SIO_001062 ;
+    rdfs:label "Stockholm population"@en ;
+    ns5:SIO_000205 <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b14>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b7> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b14> a ns5:SIO_001050 ;
+    ns6:hasPlace <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b18> ;
+    time:hasTime <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b15> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b15> a time:TemporalEntity ;
+    time:hasBeginning <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b16> ;
+    time:hasEnd <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b17> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b16> a time:Instant ;
+    time:inXSDDate "1900-01-01"^^xsd:date .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b17> a time:Instant ;
+    time:inXSDDate "1900-12-31"^^xsd:date .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b18> a ns5:SIO_000414 ;
+    rdfs:label "Stockholm"@en ;
+    ns3:locatedIn <http://sws.geonames.org/2673730/> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b3> a qb:DimensionProperty ;
+    rdfs:label "socioeconomic groups"@en ;
+    qb:concept <http://purl.bioontology.org/ontology/MESH/D004467>,
+        <http://purl.bioontology.org/ontology/MESH/Q000191>,
+        <http://purl.bioontology.org/ontology/STY/T096>,
+        <http://purl.jp/bio/4/id/200906003938764196>,
+        <http://purl.jp/bio/4/id/200906008393315870>,
+        <http://purl.jp/bio/4/id/200906030606309832>,
+        <http://purl.obolibrary.org/obo/CHEBI_24433> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b4> a qb:MeasureProperty ;
+    rdfs:label "mortality"@en ;
+    qb:concept <http://purl.bioontology.org/ontology/MESH/Q000401>,
+        <http://purl.jp/bio/4/id/200906019365176514>,
+        <http://purl.obolibrary.org/obo/STATO_0000414> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b5> a qb:DimensionProperty ;
+    rdfs:label "living standards"@en ;
+    qb:concept <http://purl.bioontology.org/ontology/MESH/D008099>,
+        <http://purl.bioontology.org/ontology/MESH/Q000592>,
+        <http://purl.jp/bio/4/id/200906045182197076>,
+        <http://purl.jp/bio/4/id/200906071956224226>,
+        <http://purl.jp/bio/4/id/200906083835576840>,
+        <http://purl.jp/bio/4/id/200906085565727062>,
+        <http://purl.obolibrary.org/obo/UBERON_0002107>,
+        ns5:SIO_000618 .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b6> a ns5:SIO_001062 ;
+    rdfs:label "Stockholm population"@en ;
+    ns5:SIO_000205 <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b7> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b8> a time:TemporalEntity ;
+    time:hasBeginning <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b9> ;
+    time:hasEnd <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b10> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b9> a time:Instant ;
+    time:inXSDDate "1900-01-01"^^xsd:date .
+
+ns2:residential_patterns_and_nutrition a ns2:Explanation,
+        ns2:InteractionEffect ;
+    ns2:hasContext <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b13> ;
+    ns2:hasObject <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b2> ;
+    ns2:hasQualifier ns2:no ;
+    ns2:hasRelation ns2:moderates ;
+    ns2:hasSubject <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b12> .
+
+<http://sws.geonames.org/2673730/> a ns3:Feature ;
+    ns3:name "Stockholm" ;
+    ns7:lat "59.32944444444445"^^xsd:float ;
+    ns7:long "18.06861111111111"^^xsd:float .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b2> a ns2:Explanation ;
+    ns2:hasContext <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b6> ;
+    ns2:hasMediator <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b5> ;
+    ns2:hasObject <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b4> ;
+    ns2:hasQualifier ns2:no ;
+    ns2:hasRelation <https://w3id.org/linkflows/superpattern/latest/affects> ;
+    ns2:hasSubject <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b3> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b7> a ns5:SIO_001050 ;
+    ns6:hasPlace <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b11> ;
+    time:hasTime <https://rdflib.github.io/.well-known/genid/rdflib/nc69fea95bb7a4194a1777017d7341dc9b8> .

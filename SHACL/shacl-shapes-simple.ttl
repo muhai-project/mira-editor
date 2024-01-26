@@ -1,0 +1,81 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cdo: <https://data.cooperationdatabank.org/vocab/class/>.
+@prefix cdp: <https://data.cooperationdatabank.org/vocab/property/>.
+@prefix ex: <http://example.org/> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix soc: <https://concepts.sagepub.com/social-science/concept/>.
+@prefix vocab: <https://iisg.amsterdam/vocab/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+ex:StudyShape a sh:NodeShape;
+   sh:targetClass cdo:Study ;
+   sh:property [
+      sh:path     cdp:independent_var ;
+      dash:editor dash:AutoCompleteEditor ;
+      sh:name "Independent variable" ;
+      sh:class    skos:Concept ;
+      sh:minCount 1 ;
+      sh:nodeKind sh:IRI ;
+      sh:order "0"^^xsd:decimal
+   ] ;
+
+   sh:property [
+      sh:path     cdp:dependent_var ;
+      sh:name "Dependent variable" ;
+      dash:editor dash:AutoCompleteEditor ;
+      sh:class    skos:Concept ;
+      sh:minCount 1;
+      sh:maxCount 1;
+      sh:nodeKind sh:IRI;
+      sh:order "1"^^xsd:decimal
+   ] ;
+
+   sh:property [
+      sh:path   ex:moderator_var ;
+      sh:name "Moderator variable" ;
+      sh:class    skos:Concept ;
+      dash:editor dash:AutoCompleteEditor ;
+      sh:minCount 1;
+      sh:maxCount 1;
+      sh:nodeKind sh:IRI;
+      sh:order "2"^^xsd:decimal
+   ] ;
+
+   sh:property [
+      sh:path   sem:hasPlace;
+      sh:class    vocab:Country ;
+      sh:name "Place" ;
+      dash:editor dash:AutoCompleteEditor ;
+      sh:minCount 1;
+      sh:maxCount 1;
+      sh:nodeKind sh:IRI;
+      sh:order "3"^^xsd:decimal
+   ] ;
+
+   sh:property [
+      sh:path   time:hasEnd;
+      sh:name "Period end";
+      dash:editor dash:DatePickerEditor;
+      sh:order 1;
+      sh:minCount 1;
+      sh:maxCount 1;
+      sh:datatype xsd:date;
+      sh:order "4"^^xsd:decimal
+   ] ;
+
+   sh:property [
+      sh:path  time:hasBeginning;
+      sh:name "Period start";
+      dash:editor dash:DatePickerEditor;
+      sh:order 0;
+      sh:minCount 1;
+      sh:maxCount 1;
+      sh:datatype xsd:date;
+      sh:order "5"^^xsd:decimal
+   ] .

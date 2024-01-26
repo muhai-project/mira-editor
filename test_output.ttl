@@ -1,0 +1,117 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/mira/> .
+@prefix ns2: <http://semanticscience.org/resource/> .
+@prefix ns3: <http://www.geonames.org/ontology#> .
+@prefix ns4: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix ns5: <http://purl.org/ontology/bibo/> .
+@prefix ns6: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix ns7: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/55755a5afa58bd73883942d822bd7829e554c840> a ns5:AcademicArticle ;
+    ns6:doi <https://doi.org/10.1001/jamanetworkopen.2020.34578> ;
+    dcterms:abstract "Key Points Question Are racial/ethnic population composition and economic inequality associated with coronavirus disease 2019 (COVID-19) incidence and mortality? Findings This cross-sectional ecological analysis of cumulative COVID-19 incidence and mortality rates for the first 200 days of the pandemic in 3141 US counties confirmed positive associations of incidence and mortality rates with racial/ethnic composition and with income inequality well as a joint association of incidence and mortality with both structural factors. Meaning This study suggests that COVID-19 surveillance systems should take into account county-level income inequality to better understand the social patterning of COVID-19." ;
+    dcterms:contributor <https://www.semanticscholar.org/author/4715599>,
+        <https://www.semanticscholar.org/author/77046151> ;
+    dcterms:created "2021-01-01"^^xsd:date ;
+    dcterms:identifier "55755a5afa58bd73883942d822bd7829e554c840" ;
+    dcterms:title "Association of Social and Economic Inequality With Coronavirus Disease 2019 Incidence and Mortality Across US Counties" ;
+    ns5:cites <http://example.org/02d2cff978a4d862f7ecbcb19a335651ec4e428a>,
+        <http://example.org/0aa3abd8365d38cb89b295d0fcdc9d158dbf128a>,
+        <http://example.org/1196615040ead9031e176d29548dd3e8287e975e>,
+        <http://example.org/2732fdcd3de5e72437cecdd9d02cc54dda23f8af>,
+        <http://example.org/350ef4353902017b7f03fb75db75e640c1c08ab1>,
+        <http://example.org/3efb7c3b3b04fab504efa54dbbe6076ef13ebbe9>,
+        <http://example.org/47c7ea73de704b7da061a136d73d8dfaf4e88e47>,
+        <http://example.org/5497bca50f5ade72b3e4fa8ea1614839d51bd6b6>,
+        <http://example.org/5a2ad714a996fa2de16acd0da9273a1aa593c9a0>,
+        <http://example.org/68adb0eff6bf167837eb6f156fb1ccf17027437e>,
+        <http://example.org/7a47d8d6917ff56ce1be69241287bc652f69b2d4>,
+        <http://example.org/80a7a3e2a4b8c69865328c7f11c4dd0d8e8c1963>,
+        <http://example.org/a79b955a575344fc215f5e2dffe7581572483473>,
+        <http://example.org/aa22b13462435be88e8b4179414c665a1a339e08>,
+        <http://example.org/ab546043d5994f31cf7aa4298cc6855bacd69eb6>,
+        <http://example.org/c08618c338099849d573577846f6e7bea13d994f>,
+        <http://example.org/cfc3c00f8c58c1696262909aa0d0e4bba3be966b>,
+        <http://example.org/dd01298e3fb3c2429b989cfec73f928dc6b532a4>,
+        <http://example.org/e050b3a82aa0bd0782f3ff2cfa886f3446edf787>,
+        <http://example.org/e76ad7b7f579b9b79121c2e735ea2645727a4c67>,
+        <http://example.org/ec55b1f9714014a48c04658595a117b66e0a7a12>,
+        <http://example.org/ece08f8a60cca138c21585a513ee2fd89d5464a5> ;
+    ns2:SIO_000008 <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b1> .
+
+<http://purl.bioontology.org/ontology/MESH/D005006> a skos:Concept ;
+    rdfs:label "Ethnicity" .
+
+<http://purl.bioontology.org/ontology/MESH/D007182> a skos:Concept ;
+    rdfs:label "Income" .
+
+<http://purl.bioontology.org/ontology/MESH/Q000208> a skos:Concept ;
+    rdfs:label "ethnology" .
+
+ns2:SIO_001014 a skos:Concept ;
+    rdfs:label "ethnicity" .
+
+<http://sws.geonames.org/6252001/> a ns3:Feature ;
+    ns3:name "United States" ;
+    ns7:lat "39.78667"^^xsd:float,
+        "40.0"^^xsd:float ;
+    ns7:long "-100.0"^^xsd:float,
+        "-83.17222"^^xsd:float .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b1> a ns2:SIO_000976 ;
+    rdfs:label "cross-sectional ecological analysis of cumulative COVID-19 incidence and mortality rates"@en ;
+    ns2:SIO_000008 <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b2> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b10> a time:Instant ;
+    time:inXSDDate "2020-07-19"^^xsd:date .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b2> a ns1:Explanation ;
+    rdfs:label "positive associations of incidence and mortality rates with racial/ethnic composition and with income inequality"@en ;
+    ns1:hasContext <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b5> ;
+    ns1:hasObject <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b4> ;
+    ns1:hasQualifier ns1:strongMediumPositive ;
+    ns1:hasRelation <https://w3id.org/linkflows/superpattern/latest/affects> ;
+    ns1:hasSubject <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b3> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b3> a qb:DimensionProperty ;
+    rdfs:label "racial/ethnic composition and income inequality"@en ;
+    qb:concept <http://purl.bioontology.org/ontology/MESH/D005006>,
+        <http://purl.bioontology.org/ontology/MESH/D007182>,
+        <http://purl.bioontology.org/ontology/MESH/Q000208>,
+        ns2:SIO_001014 .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b4> a qb:MeasureProperty ;
+    rdfs:label "COVID-19 incidence and mortality rates"@en ;
+          qb:concept  <http://purl.obolibrary.org/obo/STATO_0000414>,
+          <http://purl.bioontology.org/ontology/MESH/D000086382>.
+
+<http://purl.bioontology.org/ontology/MESH/D000086382> a skos:Concept ;
+    rdfs:label "COVID-19" .
+
+    <http://purl.obolibrary.org/obo/STATO_0000414> a skos:Concept ;
+        rdfs:label "mortality" .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b5> a ns2:SIO_000414,
+        ns2:SIO_001062 ;
+    rdfs:label "US counties"@en ;
+    ns2:SIO_000205 <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b6> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b6> a ns2:SIO_001050 ;
+    ns4:hasPlace <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b8> ;
+    time:hasTime <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b7> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b7> a time:TemporalEntity ;
+    time:hasBeginning <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b9> ;
+    time:hasEnd <https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b10> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b8> a ns2:SIO_000414 ;
+    rdfs:label "US counties"@en ;
+    ns3:locatedIn <http://sws.geonames.org/6252001/> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n4e6cf680a8f04bf1981c9f774040ebe0b9> a time:Instant ;
+    time:inXSDDate "2020-01-01"^^xsd:date .

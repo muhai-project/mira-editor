@@ -1,0 +1,124 @@
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix qb: <http://purl.org/linked-data/cube#>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/> .
+@prefix mira: <https://w3id.org/mira/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+
+:ArticleShape a sh:NodeShape;
+   sh:targetClass bibo:AcademicArticle ;
+   sh:nodeKind sh:IRI ;
+
+   # check metadata
+   sh:property [
+      sh:path prism:doi ;
+      sh:minCount 1;
+      sh:maxCount 1;
+      sh:nodeKind sh:IRI
+   ] ;
+
+   sh:propety [
+    sh:path dcterms:created ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date
+   ] ;
+
+   # paper has at least one study
+   sh:property [
+      sh:path sio:SIO_000008 ; #has attribute
+      sh:class sio:SIO_000976 ; #observational study
+      sh:minCount 1;
+      sh:nodeKind sh:IRI
+   ] .
+
+#study has at least one explanation
+:StudyShape a sh:NodeShape;
+     sh:targetClass sio:SIO_000976 ;
+     sh:nodeKind sh:IRI ;
+    sh:property [
+       sh:path sio:SIO_000008 ; #has attribute
+       sh:class mira:Explanation ;
+       sh:minCount 1;
+       sh:nodeKind sh:IRI
+    ] .
+
+#contexts can only be applied to hypotheses
+:ContextDomainShape a sh:NodeShape ;
+    sh:targetSubjectsOf mira:hasContext ;
+    sh:nodeKind sh:IRI ;
+    sh:class mira:Explanation .
+
+:ExplanationShape a sh:NodeShape ;
+    sh:targetClass mira:Explanation ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+            sh:path mira:hasContext ;
+            sh:minCount 1 ;
+            sh:xone ([ sh:class sio:SIO_000414 ]
+                 [ sh:class sio:SIO_000012 ]
+                 [ sh:class sio:SIO_001062 ])
+        ] .
+
+:ComparisonShape a sh:NodeShape ;
+    sh:targetClass mira:Comparison ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+          sh:path mira:hasContext ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:nodeKind sh:IRI
+    ] ;
+    sh:property [
+          sh:path (mira:hasContext sem:hasPlace gn:locatedIn);
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:nodeKind sh:IRI
+    ] ;
+    sh:property [
+          sh:path (mira:hasContext time:hasTime);
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:nodeKind sh:IRI
+    ] .
+
+#each value of time:inXSDDate is of type xsd:date
+:TimeShape a sh:NodeShape ;
+    sh:targetClass time:TemporalEntity ;
+    sh:property [
+        sh:path (time:hasBeginning time:inXSDDate) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:date
+    ] ;
+    sh:property [
+        sh:path (time:hasEnd time:inXSDDate) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:date
+    ] .
+
+:TimeLogicalShape a sh:NodeShape ;
+    sh:targetObjectsOf time:hasEnd ;
+    sh:property [
+        sh:path ([sh:inversePath time:hasEnd] time:hasBeginning time:inXSDDate) ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:date ;
+        sh:lessThan	time:inXSDDate
+    ] .
