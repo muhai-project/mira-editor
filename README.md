@@ -14,11 +14,11 @@ This github presents the MIRA-editor, a digital assistant aiding researchers in 
 ## Overview
 
 
-![Landing page](figures/screenshots/1. landingpage.png)
-![Co-occurrence network of co-occurring studyvariables](figures/screenshots/2. co-occurrence network.png)
-![Geographical query](figures/screenshots/4. geographical:temporal query 2.png)
-![Hypothesis extraction](figures/screenshots/6. hypothesis extraction 2.png)
-![Explain paper](figures/screenshots/8. explain paper.png)
+![Landing page](https://github.com/muhai-project/mira-editor/blob/main/figures/screenshots/1.%20landingpage.png)
+![Co-occurrence network of co-occurring studyvariables](https://github.com/muhai-project/mira-editor/blob/main/figures/screenshots/2.%20co-occurrence%20network.png)
+![Geographical query](https://github.com/muhai-project/mira-editor/blob/main/figures/screenshots/4.%20geographical:temporal%20query%202.png)
+![Hypothesis extraction](https://github.com/muhai-project/mira-editor/blob/main/figures/screenshots/6.%20hypothesis%20extraction%202.png)
+![Explain paper](https://github.com/muhai-project/mira-editor/blob/main/figures/screenshots/8.%20explain%20paper.png)
 
 ### Prerequisites
 
