@@ -49,16 +49,16 @@ pip install -r requirements.txt
 ## Programming languages
 Python 
 
-### Application domain
+## Application domain
 Semantic Web, Natural Language Processing 
 
-### Contact
+## Contact
 l.stork@uva.nl 
 
-### Creation date
+## Creation date
 01-02-2024
 
-### DOI 
+## DOI 
 10.5281/zenodo.10286845, 10.1007/978-3-031-60635-9_12
 
 ## Owner 
@@ -70,7 +70,7 @@ Organization
 ## Repository status 
 Active 
 
-### License
+## License
 
 This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
