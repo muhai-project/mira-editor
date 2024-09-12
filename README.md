@@ -72,7 +72,7 @@ Active
 
 ## License
 
-This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+[Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Acknowledgment
 This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
