@@ -71,8 +71,7 @@ Organization
 Active 
 
 ## License
-
-[Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+Apache License 2.0 
 
 ## Acknowledgment
 This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
